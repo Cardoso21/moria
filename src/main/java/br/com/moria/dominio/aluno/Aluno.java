@@ -1,6 +1,7 @@
 package br.com.moria.dominio.aluno;
 
 import br.com.moria.dominio.endereco.Endereco;
+import br.com.moria.dominio.usuario.Usuario;
 import br.com.moria.enums.Curso;
 import jakarta.persistence.*;
 import lombok.*;
@@ -26,7 +27,6 @@ public class Aluno {
     private Endereco endereco;
 
     private boolean status;
-
     public Aluno(DadosAluno dados) {
         this.status=true;
         this.nome = dados.nome();
@@ -34,6 +34,7 @@ public class Aluno {
         this.telefone = dados.telefone();
         this.curso = dados.curso();
         this.endereco = new Endereco(dados.endereco());
+
     }
 
     public void atualizarInformacoes(DadosAlunoAtualizar dados) {

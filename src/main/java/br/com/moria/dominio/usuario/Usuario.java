@@ -16,6 +16,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(of = "id")
+@Embeddable
 public class Usuario implements UserDetails {
 
     @Id
@@ -23,6 +24,9 @@ public class Usuario implements UserDetails {
     private Long id;
     private String login;
     private  String senha;
+
+
+
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -58,4 +62,6 @@ public class Usuario implements UserDetails {
     public boolean isEnabled() {
         return true;
     }
+
+
 }

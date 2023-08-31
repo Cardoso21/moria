@@ -1,6 +1,7 @@
 package br.com.moria.dominio.professor;
 
 import br.com.moria.dominio.endereco.Endereco;
+import br.com.moria.dominio.usuario.Usuario;
 import br.com.moria.enums.Curso;
 import jakarta.persistence.*;
 import lombok.*;
@@ -25,7 +26,6 @@ public class Professor {
     private Endereco endereco;
 
     private boolean status;
-
     public Professor(DadosProfessor dados) {
         this.status = true;
         this.nome = dados.nome();

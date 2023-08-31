@@ -2,6 +2,7 @@ package br.com.moria.dominio.professor;
 
 
 import br.com.moria.dominio.endereco.DadosEndereco;
+import br.com.moria.dominio.usuario.Usuario;
 import br.com.moria.enums.Curso;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
