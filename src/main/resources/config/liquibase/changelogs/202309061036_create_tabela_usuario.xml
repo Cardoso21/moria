@@ -14,7 +14,7 @@
                 <constraints nullable="false"/>
             </column>
             <column name="senha" type="varchar(100)" remarks="senha do usuario">
-
+                <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
