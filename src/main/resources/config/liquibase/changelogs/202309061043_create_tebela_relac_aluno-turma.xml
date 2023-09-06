@@ -6,11 +6,11 @@
 
 
     <changeSet id="202309061044" author="Wagner Cardoso">
-        <createTable tableName="aluno_turma">
-            <column name="aluno" type="INT" remarks="identificador unico do usuario" autoIncrement="true">
+        <createTable tableName="ALUNO_TURMA">
+            <column name="ALUNO" type="INT" remarks="identificador unico do usuario" autoIncrement="true">
                 <constraints primaryKey="true" primaryKeyName="pk_aluno_turma"/>
             </column>
-            <column name="turma" type="int" remarks="identificador unico da turma">
+            <column name="TURMAS" type="int" remarks="identificador unico da turma">
                 <constraints primaryKey="true" primaryKeyName="pk_aluno_turma"/>
             </column>
 

@@ -10,7 +10,7 @@ import java.util.Collection;
 import java.util.List;
 
 @Entity(name = "Usuarios")
-@Table(name = "usuarios")
+@Table(name = "USUARIOS")
 @Getter
 @Setter
 @NoArgsConstructor

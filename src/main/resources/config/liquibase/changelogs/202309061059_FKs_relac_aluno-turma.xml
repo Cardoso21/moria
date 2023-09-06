@@ -5,13 +5,13 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <changeSet id="202309061100" author="Wagner Cardoso">
-        <addForeignKeyConstraint baseTableName="aluno_truma" baseColumnNames="aluno" constraintName="fk_aluno"
-                                 referencedTableName="aluno"
-                                 referencedColumnNames="id" />
+        <addForeignKeyConstraint baseTableName="ALUNO_TURMA" baseColumnNames="ALUNO" constraintName="FK_ALUNO"
+                                 referencedTableName="ALUNO"
+                                 referencedColumnNames="ID" />
     </changeSet>
     <changeSet id="202309061102" author="Wagner Cardoso">
-        <addForeignKeyConstraint baseTableName="aluno_truma" baseColumnNames="turma" constraintName="fk_turma"
-                                 referencedTableName="turma"
-                                 referencedColumnNames="id" />
+        <addForeignKeyConstraint baseTableName="ALUNO_TURMA" baseColumnNames="TURMAS" constraintName="FK_TURMA"
+                                 referencedTableName="TURMAS"
+                                 referencedColumnNames="ID" />
     </changeSet>
 </databaseChangeLog>
