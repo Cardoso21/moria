@@ -6,6 +6,8 @@
 
     <include file="config/liquibase/changelogs/202309011920_create_tabela_professor.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelogs/202309061000_create_tabela_aluno.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202309061007_create_tabela_turma.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202309061036_create_tabela_usuario.xml" relativeToChangelogFile="false"/>
 
 
 </databaseChangeLog>
