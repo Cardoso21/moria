@@ -2,7 +2,9 @@ package br.com.moria.dominio.turma;
 
 import br.com.moria.dominio.aluno.Aluno;
 import br.com.moria.dominio.professor.Professor;
+import br.com.moria.enums.Curso;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -26,6 +28,9 @@ public class Turma {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "professor_id")
     private Professor professor;
+
+    @NotBlank
+    private Curso curso;
 
     @ManyToMany
     @JoinTable(name = "aluno_turma",joinColumns = {

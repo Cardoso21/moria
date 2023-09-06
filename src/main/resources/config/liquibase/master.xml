@@ -5,6 +5,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelogs/202309011920_create_tabela_professor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelogs/202309061000_create_tabela_aluno.xml" relativeToChangelogFile="false"/>
 
 
 </databaseChangeLog>
