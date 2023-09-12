@@ -5,28 +5,28 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
 
-    <changeSet id="202309061002" author="Wagner Cardoso">
-        <createTable tableName="turma">
+    <changeSet id="202309061025" author="Wagner Cardoso">
+        <createTable tableName="TURMAS">
             <column name="ID" type="INT" remarks="identificador unico da turma" autoIncrement="true">
                 <constraints primaryKey="true" />
             </column>
-            <column name="curso" type="varchar(50)" remarks="curso da turma">
+            <column name="CURSO" type="varchar(50)" remarks="curso da turma">
                 <constraints nullable="false"/>
             </column>
-            <column name="data" type="date" remarks="data de criação da turma">
+            <column name="DATA" type="date" remarks="data de criação da turma">
                 <constraints nullable="false"/>
             </column>
-            <column name="professor_id" type="int" remarks="professor da turma">
+            <column name="PROFESSOR_ID" type="int" remarks="professor da turma">
                 <constraints nullable="false"/>
             </column>
         </createTable>
     </changeSet>
     <changeSet id="202309061030" author="Wagner Cardoso">
-        <addForeignKeyConstraint baseTableName="turma"
-                                 baseColumnNames="professor_id"
-                                 constraintName="fk_professor_turma"
-                                 referencedTableName="professor"
-                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="TURMAS"
+                                 baseColumnNames="PROFESSOR_ID"
+                                 constraintName="FK_PROFESSOR"
+                                 referencedTableName="PROFESSOR"
+                                 referencedColumnNames="ID"/>
     </changeSet>
 
 </databaseChangeLog>

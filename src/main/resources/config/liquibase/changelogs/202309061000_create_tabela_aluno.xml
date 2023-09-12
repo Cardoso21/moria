@@ -6,41 +6,41 @@
 
 
     <changeSet id="202309061002" author="Wagner Cardoso">
-        <createTable tableName="aluno">
+        <createTable tableName="ALUNO">
             <column name="ID" type="INT" remarks="identificador unico do professor" autoIncrement="true">
                 <constraints primaryKey="true" />
             </column>
-            <column name="nome" type="varchar(100)" remarks="nome do professor">
+            <column name="NOME" type="varchar(100)" remarks="nome do professor">
                 <constraints nullable="false" />
             </column>
-            <column name="email" type="varchar(100)" remarks="email do professor">
+            <column name="EMAIL" type="varchar(100)" remarks="email do professor">
                 <constraints nullable="false"/>
             </column>
-            <column name="telefone" type="varchar(11)" remarks="número do professor">
+            <column name="TELEFONE" type="varchar(11)" remarks="número do professor">
                 <constraints nullable="false"/>
             </column>
-            <column name="curso" type="varchar(50)" remarks="nome do curso a ser administrado">
+            <column name="CURSO" type="varchar(50)" remarks="nome do curso a ser administrado">
                 <constraints nullable="false"/>
             </column>
-            <column name="logradouro" type="varchar(50)" >
+            <column name="LOGRADOURO" type="varchar(50)" >
                 <constraints nullable="false"/>
             </column>
-            <column name="bairro" type="varchar(50)" >
+            <column name="BAIRRO" type="varchar(50)" >
                 <constraints nullable="false"/>
             </column>
-            <column name="cep" type="varchar(8)" >
+            <column name="CEP" type="varchar(8)" >
                 <constraints nullable="false"/>
             </column>
-            <column name="complemento" type="varchar(100)" >
+            <column name="COMPLEMENTO" type="varchar(100)" >
                 <constraints nullable="true"/>
             </column>
-            <column name="numero" type="varchar(10)" >
+            <column name="NUMERO" type="varchar(10)" >
                 <constraints nullable="true"/>
             </column>
-            <column name="uf" type="varchar(2)" >
+            <column name="UF" type="varchar(2)" >
                 <constraints nullable="false"/>
             </column>
-            <column name="cidade" type="varchar(50)" >
+            <column name="CIDADE" type="varchar(50)" >
                 <constraints nullable="false"/>
             </column>
         </createTable>

@@ -22,7 +22,7 @@ public class TokenService {
             var algoritimo = Algorithm.HMAC256(secret);
             return JWT.create()
                     .withIssuer("MORIA API")
-                    .withSubject(usuario.getLogin())
+                    .withSubject(usuario.getUsername())
                     .withExpiresAt(dataExpiracao())
                     .sign(algoritimo);
         }catch (JWTCreationException exception){

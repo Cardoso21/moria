@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 import java.util.List;
 
-@Table(name = "turmas")
+@Table(name = "TURMAS")
 @Entity(name = "turma")
 @Getter
 @NoArgsConstructor
@@ -26,17 +26,17 @@ public class Turma {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "professor_id")
+    @JoinColumn(name = "PROFESSOR_ID")
     private Professor professor;
 
     @NotBlank
     private Curso curso;
 
     @ManyToMany
-    @JoinTable(name = "aluno_turma",joinColumns = {
-            @JoinColumn(name = "turma_id")
+    @JoinTable(name = "ALUNO_TURMA",joinColumns = {
+            @JoinColumn(name = "TURMA_ID")
     }, inverseJoinColumns = {
-            @JoinColumn(name = "aluno_id")
+            @JoinColumn(name = "ALUNO_ID")
     })
     private List<Aluno> aluno;
 
